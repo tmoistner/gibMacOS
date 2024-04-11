@@ -1,3 +1,38 @@
+Run gibMacOS.command and select OS you want.
+Run BuildmacOSInstallApp.command.
+
+Place output file in Applications folder. 
+
+Commands to use in Terminal for bootable USB.
+Depending on which macOS you downloaded, enter one of the following commands in Terminal as instructed above. Replace MyVolume in the command with the name of your volume, if different.
+
+If the Mac you're using to create the bootable installer is using macOS Sierra or earlier, append --applicationpath to your command, followed by the appropriate installer path, similar to what is shown in the command below for El Capitan.
+
+Sonoma:
+sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+Ventura:
+sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+Monterey:
+sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+Big Sur:
+sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+Catalina:
+sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+Mojave:
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+High Sierra:
+sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+
+El Capitan:
+sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
+
+
 Py2/py3 script that can download macOS components direct from Apple
 
 Can also now build Internet Recovery USB installers from Windows using [dd](http://www.chrysocome.net/dd) and [7zip](https://www.7-zip.org/download.html).
